@@ -42,5 +42,5 @@ while True:
 
 # Get conversation list
 conversation_list = chatbot.get_conversation_list()
-st.wreite("App Exited. Conversation list IDs: " + str(conversation_list))
+st.write("App Exited. Conversation list IDs: " + str(conversation_list))
 print("App Exited. Conversation list IDs: " + str(conversation_list))
