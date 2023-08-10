@@ -17,7 +17,7 @@ cookies = sign.login()
 
 # Save cookies to usercookies/<email>.json
 #sign.saveCookies()
-sign.saveCookiesToDir()
+#sign.saveCookiesToDir()
 
 chat_resp = ""
 
