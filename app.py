@@ -6,8 +6,11 @@ import tiktoken
 encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
 
 # Log in to huggingface and grant authorization to huggingchat
-account_name = st.text_input("Enter your HF account name:")
-account_pwd = st.text_input("Enter your HF account password:")
+#account_name = st.text_input("Enter your HF account name:")
+#account_pwd = st.text_input("Enter your HF account password:")
+
+account_name = st.secrets['EMAIL']
+account_pwd = st.secrets['PASS']
 
 sign = Login(account_name, account_pwd)
 cookies = sign.login()
