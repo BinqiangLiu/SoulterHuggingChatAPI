@@ -13,8 +13,8 @@ sign = Login(account_name, account_pwd)
 cookies = sign.login()
 
 # Save cookies to usercookies/<email>.json
-sign.saveCookies()
-#sign.saveCookiesToDir()
+#sign.saveCookies()
+sign.saveCookiesToDir()
 
 chat_resp = ""
 
