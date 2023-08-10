@@ -2,3 +2,7 @@ huggingface_hub
 streamlit
 tiktoken
 hugchat
+streamlit-chat
+streamlit-extras
+streamlit_chat
+streamlit_extras
