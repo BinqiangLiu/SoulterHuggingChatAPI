@@ -25,7 +25,7 @@ id = chatbot.new_conversation()
 chatbot.change_conversation(id)
 
 while True:
-    user_input = input("What would you like me to answer? (Enter 'exit' to quit): ")
+    user_input = st.text_input("What would you like me to answer? (Enter 'exit' to quit): ")
     if user_input.lower() == 'exit':
         break
     
@@ -44,4 +44,3 @@ while True:
 conversation_list = chatbot.get_conversation_list()
 st.wreite("App Exited. Conversation list IDs: " + str(conversation_list))
 print("App Exited. Conversation list IDs: " + str(conversation_list))
-
