@@ -30,13 +30,18 @@ while True:
         break
     
     chat_resp = chatbot.chat(user_input)
+    st.write("\n"+"Your input: "+user_input)
+    st.write("\n"+"AI Response:"+"\n"+chat_resp)
     print("\n"+"Your input: "+user_input)
     print("\n"+"AI Response:"+"\n"+chat_resp)
 
     tokens = encoding.encode(chat_resp)
     token_count=len(tokens)
+    st.write("\n"+"Token counts: "+str(token_count)+"\n")
     print("\n"+"Token counts: "+str(token_count)+"\n")
 
 # Get conversation list
 conversation_list = chatbot.get_conversation_list()
+st.wreite("App Exited. Conversation list IDs: " + str(conversation_list))
 print("App Exited. Conversation list IDs: " + str(conversation_list))
+
